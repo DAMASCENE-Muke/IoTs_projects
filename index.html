@@ -16,7 +16,7 @@
 
     <section id="menu">
         <div class="logo">
-            <img src="images/logo.jfif" alt="">
+            <img src="images/dms.jpg" alt="">
             <h2>Alcohol Detection</h2>
         </div>
 
@@ -59,26 +59,20 @@
 <h3 class="i-name">
     Dashboad
 </h3>
+<!--..................... Charts .............................................-->
 
-<div class="values">
+ 
+<div class="graphBox">
 
-    <div class="val-box">
-        <i class="fa fa-users"></i>
-        <div>
-            <h3>8,267</h3>
-            <span>New users</span>
-        </div>
+    <div class="box">
+        <canvas id="myChart"></canvas>
     </div>
 
-    <div class="val-box">
-        <i class="fa fa-shopping-bag"></i>
-        <div>
-            <h3>200,521</h3>
-            <span>Total Orders</span>
-        </div>
+    <div class="box">
+        <canvas id="earning"></canvas>
     </div>
 
-    <div class="val-box">
+    <!-- <div class="val-box">
         <i class="fa fa-receipt"></i>
         <div>
             <h3>215,542</h3>
@@ -92,7 +86,7 @@
             <h3>$667.89</h3>
             <span>This Month</span>
         </div>
-    </div>
+    </div> -->
 </div>
 
 <dir class="board">
@@ -234,6 +228,11 @@
 
 </dir>
     </section>
+
+    <!--..................... Charts .............................................-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+
+    <script src="js/main.js"></script>
 
 <script>
     $('#menu-btn').click(function(){

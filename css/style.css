@@ -65,7 +65,8 @@ color: #F3F4F6;
 #interface{
 width: calc(100% - 300px);
 margin-left: 300px;
-position: relative;
+position: relative; 
+/* background: red; */
 }
 
 #interface .navigation{
@@ -74,12 +75,12 @@ align-items: center;
 justify-content: space-between;
 background: #fff;
 padding: 15px 30px;
-border-bottom: 3px solid #594ef7;
+border-bottom: 5px solid #594ef7;
 position: fixed;
 width: calc(100% - 300px);
 }
 
-#interface .navigation .search{
+ #interface .navigation .search{
 display: flex;
 justify-content: flex-start;
 align-items: center;
@@ -101,6 +102,7 @@ font-size: 14px;
 display: flex;
 justify-content: flex-start;
 align-items: center;
+margin-right: 70px;
 
 }
 #interface .navigation .profile i{
@@ -125,7 +127,7 @@ align-items: center;
     color: #2b2b2b;
     font-size: 20px;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 20px; 
 }
        /* After the profile .............................................................*/
 
@@ -136,24 +138,28 @@ align-items: center;
     font-weight: 700;
     margin-top: 70px;
 }
-.values{
-    padding: 30px 30px 0 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+         /*.............................. Charts .................................. */
+
+.graphBox{
+    position: relative;
+    /* width: 100%; */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
+    min-height: 200px;
 
 }
-.values .val-box{
+.graphBox .box{
+    position: relative;
     background: #fff;
-    width: 235px;
-    padding: 16px 20px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    /* width: 100%; */
+    padding: 20px;
+    box-shadow: 0 7px 25px rgb(0, 0, 0, 0.08);
+    border-radius: 20px;
+    
 }
-.values .val-box i{
+/* .values .val-box i{
     font-size: 25px;
     width: 60px;
     height: 60px;
@@ -185,14 +191,23 @@ background: #7B74EC;
 .values .val-box span{
     font-size: 15px;
     color: #828997;
-}
+} */
 
 .board{
-width: 94%;
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgb(0, 0, 0, 0.08);
+    border-radius: 20px;
+
+
+/* width: 94%;
 margin: 30px 0 30px 30px;
 overflow: auto;
 background: #fff;
-border-radius: 8px;
+border-radius: 8px; */
 
 }
 .board img{
@@ -282,11 +297,11 @@ padding: 10px 15px;
         
         width: 100%;
     }
-    .values {
-        padding: 30px 30px 0 30px;
-        justify-content: flex-start;   
+    .graphBox {
+        grid-template-columns: 1fr;
+        height: auto;   
     }
-    .values .val-box {
+    .graphBox .box {
         padding: 16px 20px;
         margin: 10px 20px 10px 0px;
     }
